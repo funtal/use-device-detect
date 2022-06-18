@@ -82,5 +82,24 @@
     "**/jest": "^27.3.1",
     "**/ts-jest": "^27.0.7",
     "**/typescript": "^4.4.4"
-  }
+  },
+  "keywords": [
+    "ts",
+    "lib",
+    "hook",
+    "react",
+    "resize",
+    "privider",
+    "javascript",
+    "breakpoint",
+    "typescript",
+    "breakpoints",
+    "breakpoint-size",
+    "breakpoint-sizes",
+    "breakpoint-width",
+    "use-device-detect",
+    "use event listener",
+    "use-event-listener",
+    "use-device-detect hook"
+  ]
 }
