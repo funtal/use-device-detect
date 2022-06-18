@@ -10,7 +10,7 @@ const validateUserBreakpoints = (
   breakpoints: Partial<TBreakpoints> | undefined
 ) => {
   if (!breakpoints) {
-    return defaultBreakpoints;
+    return;
   }
 
   const breakpointsAsArray = [
@@ -24,21 +24,21 @@ const validateUserBreakpoints = (
 
   const hasNegativeValues = filteredBreakpoints.some(value => value! < 0);
   if (hasNegativeValues) {
-    throw new Error('Breakpoints must be positive numbers');
+    throw new Error('Breakpoints must be positive numbers.');
   }
 
   const hasDuplicates = filteredBreakpoints.some(
     (value, index, self) => self.indexOf(value) !== index
   );
   if (hasDuplicates) {
-    throw new Error('Breakpoints must not have duplicates');
+    throw new Error('Breakpoints must not have duplicates.');
   }
 
   const hasAscendingValues = filteredBreakpoints.every(
     (value, index, self) => index === 0 || value! >= self[index - 1]!
   );
   if (!hasAscendingValues) {
-    throw new Error('Breakpoints must be ascending');
+    throw new Error('Breakpoints must be ascending.');
   }
 
   return;
@@ -49,6 +49,7 @@ export const DeviceDetectProvider = ({
   breakpoints,
 }: IDeviceDetectProviderProps) => {
   validateUserBreakpoints(breakpoints);
+
   const mergedBreakpoints = { ...defaultBreakpoints, ...breakpoints };
 
   return (
