@@ -5,6 +5,10 @@
 [![alt Version](https://img.shields.io/npm/v/use-device-detect?color=blue)](https://www.npmjs.com/package/use-device-detect) [![alt License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![alt Twitter: twitter.com/WojtasinskiPawe](https://img.shields.io/twitter/follow/WojtasinskiPawe.svg?style=social)](https://twitter.com/WojtasinskiPawe)
 
+![use-device-detect-provider-1](https://i.imgur.com/xQpFS34.png)
+![use-device-detect-provider-2](https://i.imgur.com/O9B6bIH.png)
+![use-device-detect-hook-1](https://i.imgur.com/d26wCr1.png)
+
 ## Documentation
 
 #### Usage

@@ -30,12 +30,7 @@ const UseDevideDetectUsage = () => {
 };
 
 export const App = () => (
-  <DeviceDetectProvider breakpoints={{
-    xl: 1600,
-    lg: 1200,
-    sm: 768,
-    xs: 480
-  }}>
+  <DeviceDetectProvider>
     <UseDevideDetectUsage />
   </DeviceDetectProvider>
 );
