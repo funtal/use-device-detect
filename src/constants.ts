@@ -1,0 +1,5 @@
+export const XL_SCREEN_BREAKPOINT = 1200;
+export const LG_SCREEN_BREAKPOINT = 1024;
+export const MD_SCREEN_BREAKPOINT = 768;
+export const SM_SCREEN_BREAKPOINT = 480;
+export const XS_SCREEN_BREAKPOINT = 320;
