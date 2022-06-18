@@ -4,8 +4,8 @@ import getClientWindowSize from 'get-client-window-size';
 
 import { useDeviceDetectContext } from '..';
 
-import { IDeviceDetectData } from './use-device-detect.types';
 import { TBreakpoints } from '../../context';
+import { IDeviceDetectData } from './use-device-detect.types';
 
 const getDeviceData = ({ lg, md, sm, xl, xs }: TBreakpoints) => {
   const { width } = getClientWindowSize();
@@ -65,7 +65,7 @@ export const useDeviceDetect = () => {
 
   useEventListener('resize', handleResize);
 
-  return { deviceData, windowSize };
+  return { deviceData, windowSize, breakpoints };
 };
 
 export default useDeviceDetect;

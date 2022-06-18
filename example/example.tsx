@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { DeviceDetectProvider, useDeviceDetect } from '../src';
 
 const UseDevideDetectUsage = () => {
@@ -15,16 +16,13 @@ const UseDevideDetectUsage = () => {
   )
 };
 
-export const App = () => {
-  return (
-    <DeviceDetectProvider breakpoints={{
-      xl: 1600,
-      lg: 1200,
-      md: 992,
-      sm: 768,
-      xs: 480
-    }}>
-      <UseDevideDetectUsage />
-    </DeviceDetectProvider>
-  );
-};
+export const App = () => (
+  <DeviceDetectProvider breakpoints={{
+    xl: 1600,
+    lg: 1200,
+    sm: 768,
+    xs: 480
+  }}>
+    <UseDevideDetectUsage />
+  </DeviceDetectProvider>
+);

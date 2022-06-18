@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
-import { IDeviceDetectContextValue } from '../../context';
 
-export interface IDeviceDetectProviderProps
-  extends Partial<IDeviceDetectContextValue> {
+import { TBreakpoints } from '../../context';
+
+export interface IDeviceDetectProviderProps {
   children: ReactNode;
+  breakpoints?: Partial<TBreakpoints>;
 }
