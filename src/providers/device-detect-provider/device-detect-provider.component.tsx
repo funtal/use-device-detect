@@ -6,9 +6,7 @@ import { defaultBreakpoints } from './device-detect-provider.defaults';
 import { DeviceDetectContext, TBreakpoints } from '../../context';
 import { IDeviceDetectProviderProps } from './device-detect-provider.types';
 
-const validateUserBreakpoints = (
-  breakpoints: Partial<TBreakpoints> | undefined
-) => {
+const validateUserBreakpoints = (breakpoints: Partial<TBreakpoints> | undefined) => {
   if (!breakpoints) {
     return;
   }
@@ -44,10 +42,7 @@ const validateUserBreakpoints = (
   return;
 };
 
-export const DeviceDetectProvider = ({
-  children,
-  breakpoints,
-}: IDeviceDetectProviderProps) => {
+export const DeviceDetectProvider = ({ children, breakpoints }: IDeviceDetectProviderProps) => {
   validateUserBreakpoints(breakpoints);
 
   const mergedBreakpoints = { ...defaultBreakpoints, ...breakpoints };

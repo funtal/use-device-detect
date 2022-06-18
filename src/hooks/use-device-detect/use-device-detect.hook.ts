@@ -53,9 +53,7 @@ export const useDeviceDetect = () => {
   const { breakpoints } = useDeviceDetectContext();
 
   const [windowSize, setWindowSize] = useState(getClientWindowSize);
-  const [deviceData, setDeviceData] = useState<IDeviceDetectData>(() =>
-    getDeviceData(breakpoints)
-  );
+  const [deviceData, setDeviceData] = useState<IDeviceDetectData>(() => getDeviceData(breakpoints));
 
   useEffect(() => {
     setDeviceData(getDeviceData(breakpoints));
