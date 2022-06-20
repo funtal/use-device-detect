@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { DeviceDetectProvider, useDeviceDetect } from '../src';
+import { useDeviceDetect } from '../src';
 
 const UseDevideDetectUsage = () => {
   const { deviceData } = useDeviceDetect();
@@ -30,7 +30,5 @@ const UseDevideDetectUsage = () => {
 };
 
 export const App = () => (
-  <DeviceDetectProvider>
-    <UseDevideDetectUsage />
-  </DeviceDetectProvider>
+  <UseDevideDetectUsage />
 );
