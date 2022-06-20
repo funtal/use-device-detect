@@ -57,7 +57,7 @@ export const useDeviceDetect = () => {
 
   useEffect(() => {
     setDeviceData(getDeviceData(breakpoints));
-  }, [windowSize.width, breakpoints]);
+  }, [windowSize.width, JSON.stringify(breakpoints)]);
 
   const handleResize = () => setWindowSize(getClientWindowSize());
 
