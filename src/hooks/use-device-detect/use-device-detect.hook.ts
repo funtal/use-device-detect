@@ -10,8 +10,8 @@ import { IDeviceDetectData } from './use-device-detect.types';
 const getDeviceData = ({ lg, md, sm, xl, xs }: TBreakpoints) => {
   const { width } = getClientWindowSize();
 
-  const isXXL = width > xl;
   const isXS = width < xs;
+  const isXXL = width > xl;
   const isSM = width >= xs && width < sm;
   const isMD = width >= sm && width < md;
   const isLG = width >= md && width < lg;
